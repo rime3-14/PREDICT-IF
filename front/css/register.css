@@ -6,20 +6,22 @@ body {
 
 .container {
   display: flex;
-  height: 100vh;
+  height: 130vh;
 }
 
+/*note to remember : flex permet le scaling de l element en fct de l ecran en css*/
+
 .left-panel {
-  flex: 1;
+  flex: 1; /* prend la moitié de l ecran */
   padding: 40px;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  flex-direction: column; /*empile verticalement*/
+  justify-content: center; /*centre verticalement et horizontalement*/
   align-items: center;
 }
 
 .right-panel {
-  flex: 1;
+  flex: 1; /*prend la moitié de l ecran */
   background-color: #fff;
   display: flex;
   justify-content: center;
@@ -29,8 +31,8 @@ body {
 .tarot-card {
   max-width: 80%;
   height: auto;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-  border-radius: 12px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /*ombre douce*/
+  border-radius: 12px; /*coins arrondis*/
 }
 
 .title {
@@ -38,32 +40,39 @@ body {
   margin-bottom: 30px;
 }
 
-.login-form {
+.register-form {
+  max-width: 700px;
+  margin: auto;
   display: flex;
   flex-direction: column;
-  width: 100%;
-  max-width: 300px;
+  gap: 20px;
 }
 
-.login-form label {
-  margin-top: 10px;
+.form-columns {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 10px;
+}
+
+.column label {
   font-weight: bold;
 }
 
-.login-form input {
+.column input {
   padding: 10px;
-  margin-top: 5px;
   border: 1px solid #ccc;
   border-radius: 6px;
 }
 
-.forgot-password {
-  align-self: flex-end;
-  font-size: 0.9em;
-  margin: 5px 0 15px;
-  text-decoration: none;
-  color: #555;
-}
+
+
 
 .sign-in, .register, .temp-button {
   background-color: #8B3A3A;

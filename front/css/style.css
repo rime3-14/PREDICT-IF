@@ -1,0 +1,76 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f9f9f9;
+}
+
+.hero {
+  height: 100vh;
+  width: 100vw;
+  background-image: url("../photos/imageaccueuil.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: black; /* ou #111 pour esthétique */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  overflow: hidden;
+}
+
+
+/* texte directement posé sur l'image */
+.hero-content {
+  position: relative;
+  z-index: 1;
+  padding: 20px;
+  background: none;
+  backdrop-filter: none;
+}
+
+.cta-button {
+  background-color: #8B3A3A;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 6px;
+  border: none;
+  font-size: 1rem;
+  margin-top: 20px;
+  text-decoration: none;
+}
+
+
+.title {
+  font-size: 32px;
+  margin-bottom: 30px;
+}
+
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 40px;
+}
+
+.card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+
+.specialty {
+  font-style: italic;
+  color: #8B3A3A;
+}
+

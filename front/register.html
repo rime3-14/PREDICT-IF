@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PredictIF - Inscription </title>
+  <link rel="stylesheet" href="css/register.css">
+
+
+
+</head>
+<body>
+  <!-- conteneur en deux colonnes -->
+  <div class="container">
+    <!-- à gauche, formulaire -->
+    <div class="left-panel">
+
+      <button class="back-button">← Back to Homepage</button>
+      <h1 class="title">PredictIF</h1>
+
+      <form class="register-form">
+        <div class = "form-columns">
+            <div class = "column">
+                <label for="nom">Nom</label>
+                <input type="nom" id="nom" placeholder="MARTIN" required />
+                <label for="prenom">Prénom</label>
+                <input type="prenom" id="prenom" placeholder="Camille" required />
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="example@email.com" required />
+                <label for="adresse">Adresse</label>
+                <input type="adresse" id="adresse" placeholder="21 Rue des Cerisiers" required />
+            </div>
+            <div class = "column">
+                <label for="date de naissance">Date de naissance</label>
+                <input type="date de naissance" id="date de naissance" placeholder="DD/MM/YY" required />
+                <label for="telephone">Téléphone</label>
+                <input type="telephone" id="telephone" placeholder="06XXXXXXX" required />
+                <label for="mot de passe">Mot de Passe</label>
+                <input type="mot de passe" id="mot de passe" placeholder="••••••••" required />
+                <label for="verification du mot de passe">Vérification du Mot de Passe</label>
+                <input type="verification du mot de passe" id="verification du mot de passe" placeholder="••••••••" required />
+
+            </div>
+        </div>
+
+        <button type="submit" class="register">Register</button>
+
+        <!-- ligne de séparation -->
+        <div class="divider">ou</div>
+
+        <p>Vous avez déja un compte ?</p>
+        <button type="button" class="sign-in">Sign-In</button>
+      </form>
+
+    </div>
+    <!-- à droite, image de tarot -->
+    <div class="right-panel">
+      <img src="photos/image1connexion.png" alt="The Moon Tarot Card" class="tarot-card" />
+    </div>
+  </div>
+
+  <script src="js/register.js"></script>
+</body>
+</html>
