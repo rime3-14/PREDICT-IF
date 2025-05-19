@@ -1,0 +1,92 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f9f9f9;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+.left-panel {
+  flex: 1; /* prend la moitié de l ecran */
+  padding: 40px;
+  display: flex;
+  flex-direction: column; /*empile verticalement*/
+  justify-content: center; /*centre verticalement et horizontalement*/
+  align-items: center;
+}
+
+.divider {
+  text-align: center;
+  margin: 15px 0;
+  color: #888;
+}
+
+.right-panel {
+  flex: 1; /*prend la moitié de l ecran */
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align : left;
+}
+
+.photo-user {
+  max-width: 80%;
+  height: auto;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /*ombre douce*/
+}
+
+.title {
+  font-size: 32px;
+  margin-bottom: 30px;
+  text-align: center ;
+}
+
+.logout-button {
+  background-color: #000000;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.selectmedium-button {
+  background-color: #8B3A3A;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 10px; 
+}
+
+.selectmedium-button:hover {
+    background-color: #722c2c;
+}
+
+.historique-button {
+  background-color: #00000000;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 10px; 
+}
+
+.historique-button:hover {
+    background-color: #000000;
+}
+
+.boutons-bas {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* space between buttons */
+  margin-top: auto;
+  padding: 40px 0;
+}
