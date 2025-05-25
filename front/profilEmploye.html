@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Profil Employee</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <link rel="stylesheet" href="css/profilEmploye.css">
+</head>
+<body>
+
+  <header class="header">Profil Employee</header>
+
+  <div class="content-box">
+    <div class="top-bar">
+      <h2>Bonjour, Maria</h2>
+      <button class="logout-button">Log Out</button>
+    </div>
+
+    <div class="top-medium-section">
+      <label for="client-select">Top Medium pour le client:</label>
+      <select id="client-select">
+        <option>TEUMIE Irénée</option>
+        <option>Autre Client</option>
+      </select>
+
+      <ul class="medium-list">
+        <li>1. Irma → 7 consultations</li>
+        <li>2. Mr M → 5 consultations</li>
+        <li>3. Selena → 4 consultations</li>
+      </ul>
+
+      <canvas id="medium-chart"></canvas>
+    </div>
+
+    <div class="toggle-container">
+      <label for="toggle-stats">Afficher statistique Employees</label>
+      <input type="checkbox" id="toggle-stats" />
+    </div>
+
+    <h3>Carte Clients</h3>
+    <img src="photos/map.png" class="map-img" alt="Carte Clients" />
+
+    <button class="consultation-button" disabled>Consultation</button>
+  </div>
+
+  <script>
+    const ctx = document.getElementById('medium-chart').getContext('2d');
+    new Chart(ctx, {
+      type: 'line',
+      data: {
+        labels: ['Endora', 'Prof. Tran', 'Mme Irma', 'Mr M', 'Selena'],
+        datasets: [{
+          label: 'Clients',
+          data: [250, 320, 400, 510, 600],
+          borderColor: 'purple',
+          backgroundColor: 'rgba(128,0,128,0.1)',
+          fill: true,
+          tension: 0.3
+        }]
+      },
+      options: {
+        responsive: true,
+        scales: {
+          y: {
+            beginAtZero: false
+          }
+        }
+      }
+    });
+  </script>
+
+</body>
+</html>
